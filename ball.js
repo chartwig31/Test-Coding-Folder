@@ -43,7 +43,6 @@ function moveBall2() {
 var positionX2 = 30;
 var positionY2 = 40;
 var velocity2 = 50;
-var reverse2 = false;
 var ball2 = document.getElementById("ball2");
  
  var Xmin2 = 50;
@@ -72,7 +71,7 @@ var ball2 = document.getElementById("ball2");
  positionY2 > Ymax2||
  positionY2===Ymin2)
  {
-   reverse2 = !reverse2;
+   reverse = !reverse;
  }
 }
 
@@ -84,4 +83,4 @@ var ball2 = document.getElementById("ball2");
 
 
 setInterval(moveBall, 100);
-
+setInterval(moveBall2, 50);
