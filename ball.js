@@ -30,6 +30,11 @@ function moveBall() {
   }
   
 }
+var velocity2 = 7;
+var positionX2 = 2;
+var positionY2 = 4;
+var ball 2 = document.getElementById('ball2');
+
 function moveBall2(){
   var Xmin = 50;
   var Xmax = 200;
@@ -37,15 +42,15 @@ function moveBall2(){
   var Ymax = 200;
   
   if(reverse){
-    positionX = position X - velocity;
-    positionY = positionY - velocity;
+    positionX2 = positionX2 - velocity2;
+    positionY2 = positionY2 - velocity2;
     ball.style.left = positionX + "px";
     ball.style.top =  positionY + "px";
       }
-  if(positionX>Xmax ||
-  positionX===Xmin||
-  positionY > Ymax||
-  positionY===Ymin
+  if(positionX2>Xmax ||
+  positionX2===Xmin||
+  positionY2 > Ymax||
+  positionY2===Ymin
   ){
     reverse = !reverse;
   }
