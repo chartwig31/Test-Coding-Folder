@@ -1,106 +1,41 @@
-var positionX = 0;
-
-
-
-
-var positionY = 0;
-
-
-var velocity = 100;
-
-
-var reverse = false;
-
-
-var ball = document.getElementById("ball");
-
-
-
-
-
 
 
 function moveBall() {
 
-
+var positionX = 0;
+var positionY = 0;
+var velocity = 100;
+var reverse = false;
+var ball = document.getElementById("ball");
+ 
  var Xmin = 0;
-
-
  var Xmax = 300;
-
-
  var Ymin = 0;
-
-
  var Ymin = 300;
 
-
-
-
-
-
-
  if(reverse){
-
-
    positionX = positionX - velocity;
-
-
    positionY = positionY - velocity;
-
-
    ball.style.left = positionX + "px";
-
-
    ball.style.top =  positionY + "px";
-
-
  }
 
 
  else{
-
-
    positionX = positionX + velocity;
-
-
    positionY = positionY + velocity;
-
-
    ball.style.left = positionX + "px";
-
-
    ball.style.top = positionY + "px";
-
-
  }
 
 
  if(positionX>Xmax ||
-
-
  positionX===Xmin||
-
-
  positionY > Ymax||
-
-
- positionY===Ymin
-
-
- ){
-
-
+ positionY===Ymin)
+ {
    reverse = !reverse;
-
-
  }
-
-
-
-
-
-
 }
 
 
