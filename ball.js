@@ -13,9 +13,7 @@ function moveBall() {
 
   if(reverse){
     positionX = positionX - velocity;
-    positionY = positionY - velocity;
-    ball.style.left = positionX + "px";
-    ball.style.top =  positionY + "px";
+    
   }
   else{
     positionX = positionX + velocity;
@@ -32,6 +30,27 @@ function moveBall() {
   }
   
 }
-
+function moveBall2(){
+  var Xmin = 50;
+  var Xmax = 200;
+  var Ymin = 50;
+  var Ymax = 200;
+  
+  if(reverse){
+    positionX = position X - velocity;
+    positionY = positionY - velocity;
+    ball.style.left = positionX + "px";
+    ball.style.top =  positionY + "px";
+      }
+  if(positionX>Xmax ||
+  positionX===Xmin||
+  positionY > Ymax||
+  positionY===Ymin
+  ){
+    reverse = !reverse;
+  }
+    
+    
+    
 // This call the moveBall function every 100ms
 setInterval(moveBall, 100);
