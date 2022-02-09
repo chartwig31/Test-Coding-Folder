@@ -35,7 +35,10 @@ function moveBall() {
 }
 
 setInterval(moveBall, 100);
-
+var positionX2 = 0;
+var positionY2 = 0;
+var velocity2 = 100;
+var reverse = false;
 var ball2 = document.getElementById("ball2");
 function moveBall2() {
  var Xmin2 = 50;
