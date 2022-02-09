@@ -3,6 +3,7 @@ var positionY = 0;
 var velocity = 100;
 var reverse = false;
 var ball = document.getElementById("ball");
+var ball2 = document.getElementByID ("ball2");
 
 function moveBall() {
   var Xmin = 0;
