@@ -36,10 +36,10 @@ var positionY2 = 4;
 var ball 2 = document.getElementById('ball2');
 
 function moveBall2(){
-  var Xmin = 50;
-  var Xmax = 200;
-  var Ymin = 50;
-  var Ymax = 200;
+  var Xmin2 = 50;
+  var Xmax2 = 200;
+  var Ymin2 = 50;
+  var Ymax2 = 200;
   
   if(reverse){
     positionX2 = positionX2 - velocity2;
@@ -47,10 +47,10 @@ function moveBall2(){
     ball.style.left = positionX + "px";
     ball.style.top =  positionY + "px";
       }
-  if(positionX2>Xmax ||
-  positionX2===Xmin||
-  positionY2 > Ymax||
-  positionY2===Ymin
+  if(positionX2>Xmax2 ||
+  positionX2===Xmin2||
+  positionY2 > Ymax2||
+  positionY2===Ymin2
   ){
     reverse = !reverse;
   }
